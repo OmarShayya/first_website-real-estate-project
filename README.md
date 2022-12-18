@@ -1,2 +1,3 @@
 # first_website-real-estate-project
-real estate website project (NodeJS, MongoDB, html, css, js) 
+Real Estate website project (NodeJS, MongoDB, html, css, js) 
+This is a real estate website that I did as a project in my web programming course. I used a a template for the homepage, but did some changes to it. I also added some back-end functions and other pages. some of the functions: login, signup and logout using ajax. Furthermore, I added an option to insert your house with description and image to mongodb database using multer, and another option to query for (my own) lands and delete from the database. Last but not least, I added an option to called view that only an admin can see and which takes him to a page here he can view all users and change their role to admin.
