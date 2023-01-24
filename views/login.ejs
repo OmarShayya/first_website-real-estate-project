@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="/images/logoo.PNG" />
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="header-top-list">
+
+                    <li>
+                        <a href="mailto:omarshayya132@gmail.com" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>omarshayya132@gmail.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>mainroad, Sawfar, Aley</address>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/omar.shayya.10?mibextid=ZbWKwL"
+                                class="header-top-social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <button class="header-top-btn">Add Listing</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <img src="/logoo.PNG" alt="Homeverse logo">
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="#" class="logo">
+                            <img src="/logoo.PNG" alt="Homeverse logo">
+                        </a>
+
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+
+                            <li>
+                                <a href="http://localhost:3005/#" class="navbar-link" data-nav-link>Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                            </li>
+
+                            <li>
+                                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                            </li>
+
+                            <li>
+                                <a href="/view" class="navbar-link" data-nav-link>Property</a>
+                            </li>
+
+                            <li>
+                                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="header-bottom-actions">
+                    <input type="text" class="searchinput" placeholder="Search">
+                    <button class="header-bottom-actions-btn searchbutton" aria-label="Search">
+                     
+
+                        <span>Search</span>
+                    </button>
+
+                    <form action="">
+                        <button class="header-bottom-actions-btn searchbutton2" aria-label="Search">
+                            
+
+                            <span>Search</span>
+                        </button>
+                    </form>
+
+
+
+
+
+
+                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                        
+
+                        <span>Menu</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form id="form2" method="post" autocomplete="off" class="sign-in-form">
+                        <div class="logo2">
+                            <img src="/logoo.PNG" alt="easyclass" />
+                        </div>
+
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registred yet?</h6>
+                            <a href="#" class="toggle">Sign up</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required
+                                    name="username" />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required
+                                    name="password" />
+                                <label>Password</label>
+                            </div>
+
+                            <div class="mssg bg-danger">
+                                <span id="check" ></span>
+                            </div>
+                            <div id="LangTable"><a href="/" id="bb"class="alertmessage"></a>
+                            </div>
+
+                            <input type="submit" value="Sign In" class="sign-btn" />
+
+                            <p class="text">
+                                Forgotten your password or your login datails?
+                                <a href="#">Get help signing in</a>
+                            </p>
+                        </div>
+                    </form>
+
+                    <form autocomplete="off" id="form1" method="post" class="sign-up-form">
+                        <div class="logo2">
+                            <img src="/logoo.PNG" alt="easyclass" />
+                        </div>
+
+
+                        <div class="heading">
+                            <h2>Get Started</h2>
+                            <h6>Already have an account?</h6>
+                            <a href="#" class="toggle" style="margin-bottom: 8px;">Sign in</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" name="username"
+                                    required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" class="input-field" autocomplete="off" name="email" required />
+                                <label>Email</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off"
+                                    name="password" required />
+                                <label>Password</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off"
+                                    name="passwordConf" required />
+                                <label>Confirm Password</label>
+                            </div>
+                            <div class="mssg bg-danger">
+                                <span id="check2"></span>
+                            </div>
+                            <div id="LangTable"><a href="/" id="aa" class="alertmessage"></a>
+                            </div>
+                            <!-- <div class="input-wrap2">
+                                <span> upload pic</span>
+                                <input type="file" autocomplete="off" required name="pp" />
+
+                            </div> -->
+
+
+
+                            <input type="submit" value="Sign Up" class="sign-btn" />
+
+                            <p class="text">
+                                By signing up, I agree to the
+                                <a href="#">Terms of Services</a> and
+                                <a href="#">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="/blog-1.png" class="image img-1 show" alt="" />
+                        <img src="/blog-2.jpg" class="image img-2" alt="" />
+                        <img src="/blog-3.jpg" class="image img-3" alt="" />
+                    </div>
+
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Find your deam house</h2>
+                                <h2>Rent a home as much you like</h2>
+                                <h2>Sell your property</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="cta2">
+        <div class="container">
+
+            <div class="cta-card">
+                <div class="card-content">
+                    <h2 class="h2 card-title">Looking for a dream home?</h2>
+
+                    <p class="card-text">We can help you realize your dream of a new home</p>
+                </div>
+
+                <button class="btn cta-btn">
+                    Explore Properties
+
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="/Capture-removebg-preview.png" alt="Homeverse logo" width="100%">
+                    </a>
+
+                    <p class="section-text">
+                        Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of
+                        the printing.
+                    </p>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <a href="#" class="contact-link">
+                                <ion-icon name="location-outline"></ion-icon>
+
+                                <address>Brooklyn, New York, United States</address>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+0123456789" class="contact-link">
+                                <ion-icon name="call-outline"></ion-icon>
+
+                                <span>+961-81453643</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:omarshayya132@gmail.com" class="contact-link">
+                                <ion-icon name="mail-outline"></ion-icon>
+
+                                <span>omarshayya132@gmail.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Company</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">All Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Locations Map</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Terms & Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Promotional Offers</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Customer Care</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; All Rights Reserved
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Javascript file -->
+    <script>
+        $(document).ready(function () {
+
+            $("#form1").submit(function (event) {
+                event.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/signup',
+                    data: $('#form1').serialize(),
+                    dataType: "json",
+                    success: function (response) {
+                        //alert("a");
+                        //console.log(response.Success);
+                        $('#form1')[0].reset();
+
+                        document.getElementById("check2").innerHTML = response.Success;
+                        //ADD THIS CODE
+                        setTimeout(function () {
+                            document.getElementById("check2").innerHTML = "";
+                        }, 3000);
+                        if (response.Success == "Success!") {
+                            document.getElementById("aa").click();
+                        };
+                    },
+                    error: function (err) {
+                        document.getElementById("check2").innerHTML = err;
+                    }
+                })
+            });
+        
+
+$( "#form2" ).submit(function(event) {
+    event.preventDefault();
+
+    $.ajax({
+        type: 'POST',
+        url: '/login',
+        data: $('#form2').serialize(),
+        dataType: "json",
+        success: function(response){
+            //alert("a");
+            //console.log(response.Success);
+            $('#form2')[0].reset();
+
+            document.getElementById("check").innerHTML=response.Success;
+                 //ADD THIS CODE
+                 setTimeout(function(){
+                     document.getElementById("check").innerHTML="";
+                 },3000);
+                 if (response.Success=="Success!") {
+                     document.getElementById("bb").click();
+                 };
+             },
+             error: function() {
+             }
+         })
+});
+
+});
+    </script>
+    
+
+    <script>
+        const inputs = document.querySelectorAll(".input-field");
+        const toggle_btn = document.querySelectorAll(".toggle");
+        const main = document.querySelector("main");
+        const bullets = document.querySelectorAll(".bullets span");
+        const images = document.querySelectorAll(".image");
+
+        inputs.forEach((inp) => {
+            inp.addEventListener("focus", () => {
+                inp.classList.add("active");
+            });
+            inp.addEventListener("blur", () => {
+                if (inp.value != "") return;
+                inp.classList.remove("active");
+            });
+        });
+
+        toggle_btn.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                main.classList.toggle("sign-up-mode");
+            });
+        });
+
+        function moveSlider() {
+            let index = this.dataset.value;
+
+            let currentImage = document.querySelector(`.img-${index}`);
+            images.forEach((img) => img.classList.remove("show"));
+            currentImage.classList.add("show");
+
+            const textSlider = document.querySelector(".text-group");
+            textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
+
+            bullets.forEach((bull) => bull.classList.remove("active"));
+            this.classList.add("active");
+        }
+
+        bullets.forEach((bullet) => {
+            bullet.addEventListener("click", moveSlider);
+        });
+    </script>
+
+    <script>
+        "use strict";
+
+        /**
+         * element toggle function
+         */
+
+        const elemToggleFunc = function (elem) {
+            elem.classList.toggle("active");
+        };
+
+        /**
+         * navbar toggle
+         */
+
+        const navbar = document.querySelector("[data-navbar]");
+        const overlay = document.querySelector("[data-overlay]");
+        const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+        const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+        const navbarLinks = document.querySelectorAll("[data-nav-link]");
+
+        const navElemArr = [overlay, navCloseBtn, navOpenBtn];
+
+        /**
+         * close navbar when click on any navbar link
+         */
+
+        for (let i = 0; i < navbarLinks.length; i++) {
+            navElemArr.push(navbarLinks[i]);
+        }
+
+        /**
+         * addd event on all elements for toggling navbar
+         */
+
+        for (let i = 0; i < navElemArr.length; i++) {
+            navElemArr[i].addEventListener("click", function () {
+                elemToggleFunc(navbar);
+                elemToggleFunc(overlay);
+            });
+        }
+
+        /**
+         * header active state
+         */
+
+        const header = document.querySelector("[data-header]");
+
+        window.addEventListener("scroll", function () {
+            window.scrollY >= 50
+                ? header.classList.add("active")
+                : header.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>

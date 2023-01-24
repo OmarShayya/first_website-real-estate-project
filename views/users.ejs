@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: -webkit-linear-gradient(45deg, rgb(84, 196, 190), #000000);
+            background: linear-gradient(0deg, rgb(83, 195, 189),black );
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        .containerr2 {
+            position: relative;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 25%;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        thead th {
+            background-color: #000000;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        tbody td {
+            position: relative;
+        }
+
+        tbody td:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="header-top-list">
+
+                    <li>
+                        <a href="mailto:omarshayya132@gmail.com" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>omarshayya132@gmail.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>mainroad, Sawfar, Aley</address>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/omar.shayya.10?mibextid=ZbWKwL"
+                                class="header-top-social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <button class="header-top-btn">Add Listing</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <img src="/logoo.PNG" alt="Homeverse logo">
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="#" class="logo">
+                            <img src="/logoo.PNG" alt="Homeverse logo">
+                        </a>
+
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+
+                            <li>
+                                <a href="/" class="navbar-link" data-nav-link>Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                            </li>
+
+                            <li>
+                                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                            </li>
+
+                            <li>
+                                <a href="/view" class="navbar-link" data-nav-link>Property</a>
+                            </li>
+
+                            <li>
+                                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="header-bottom-actions">
+                    <input type="text" class="searchinput" placeholder="Search...">
+                    <button class="header-bottom-actions-btn searchbutton" aria-label="Search">
+                        
+
+                        <span>Search</span>
+                    </button>
+
+                    <form action="">
+                        <button class="header-bottom-actions-btn searchbutton2" aria-label="Search">
+                      
+
+                            <span>Search</span>
+                        </button>
+                    </form>
+                    <a href="/login" id="loginA"> </a>
+                    <form class="profile-form" class="formm">
+                        <button onclick="checkIfLogged()" class="header-bottom-actions-btn" aria-label="Profile">
+                          
+
+                            <span>Profile</span>
+                        </button>
+                    </form>
+                    <a href="/logout" id="logoutA"></a>
+
+                    <form action="" class="formm">
+                        <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                            
+
+                            <span>Menu</span>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section>
+
+            <div class="containerr2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>isAdmin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%items.forEach(user=> { %>
+                            <tr>
+                                <td contenteditable="true">
+                                    <%=user.unique_id%>
+                                </td>
+                                <td contenteditable="true">
+                                    <%=user.username%>
+                                </td>
+                                <td id="admin" contenteditable="true"><%=user.isAdmin%></td>
+                                <td class="delete" style="background-color: rgba(0, 255, 255, 0.1);">
+                                    <form action="delete/<%=user._id%>"  id="form" method="post"> <button <button style="background-color: rgb(0, 0, 0); padding: 5px 20px; border-radius: 20px; color: #fff;">
+                                            Delete</button></form>
+                                </td>
+                                <td class="delete"  text-align: center;" style="background-color: rgba(0, 255, 255, 0.1);">
+                                    <form action="update/<%=user._id%>" id="form" method="post"> <button style="background-color: rgb(0, 0, 0); padding: 5px 20px; border-radius: 20px; color: #fff;">
+                                            Update</button></form>
+                                </td>
+                            </tr>
+                            <%})%>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="/Capture-removebg-preview.png" alt="Homeverse logo" width="100%">
+                    </a>
+
+                    <p class="section-text">
+                        Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of
+                        the printing.
+                    </p>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <a href="#" class="contact-link">
+                                <ion-icon name="location-outline"></ion-icon>
+
+                                <address>Brooklyn, New York, United States</address>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+0123456789" class="contact-link">
+                                <ion-icon name="call-outline"></ion-icon>
+
+                                <span>+961-81453643</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:omarshayya132@gmail.com" class="contact-link">
+                                <ion-icon name="mail-outline"></ion-icon>
+
+                                <span>omarshayya132@gmail.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Company</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">All Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Locations Map</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Terms & Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Promotional Offers</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Customer Care</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; All Rights Reserved
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        "use strict";
+
+        /**
+         * element toggle function
+         */
+
+        const elemToggleFunc = function (elem) {
+            elem.classList.toggle("active");
+        };
+
+        /**
+         * navbar toggle
+         */
+
+        const navbar = document.querySelector("[data-navbar]");
+        const overlay = document.querySelector("[data-overlay]");
+        const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+        const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+        const navbarLinks = document.querySelectorAll("[data-nav-link]");
+
+        const navElemArr = [overlay, navCloseBtn, navOpenBtn];
+
+        /**
+         * close navbar when click on any navbar link
+         */
+
+        for (let i = 0; i < navbarLinks.length; i++) {
+            navElemArr.push(navbarLinks[i]);
+        }
+
+        /**
+         * addd event on all elements for toggling navbar
+         */
+
+        for (let i = 0; i < navElemArr.length; i++) {
+            navElemArr[i].addEventListener("click", function () {
+                elemToggleFunc(navbar);
+                elemToggleFunc(overlay);
+            });
+        }
+
+        /** 
+         * header active state
+         */
+
+        const header = document.querySelector("[data-header]");
+
+        window.addEventListener("scroll", function () {
+            window.scrollY >= 400
+                ? header.classList.add("active")
+                : header.classList.remove("active");
+        });
+
+    </script>
+</body>
+
+
+
+</html>
